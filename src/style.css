@@ -1,0 +1,94 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.main-container {
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  font-size: 50px;
+}
+
+.scores-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10%;
+  margin-top: 70px;
+}
+
+.recent-scores {
+  width: 45%;
+}
+
+.refresh {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.refresh .btn-refresh {
+  border: 2px solid #000;
+  background-color: #fff;
+}
+
+.refresh h2 {
+  margin: 0;
+}
+
+.scores-table {
+  border: 2px solid #000;
+  margin-top: 20px;
+}
+
+.scores-table .list-items {
+  padding-left: 0;
+  margin: 0;
+}
+
+.scores-table .list-items .list-item {
+  list-style: none;
+}
+
+.scores-table .list-items .list-item:nth-child(even) {
+  background-color: #e8e4e3;
+}
+
+.add-score {
+  width: 40%;
+}
+
+.add-score h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.add-score ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.add-score ul li {
+  list-style: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.add-score ul li input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 30px;
+  border: 2px solid #000;
+}
+
+.add-score ul li button {
+  float: right;
+  border: 2px solid #000;
+  background-color: #fff;
+  padding: 5px;
+}
