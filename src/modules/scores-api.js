@@ -44,7 +44,6 @@ const postScores = async (obj) => {
     return { success: true, data };
   } catch (error) {
     return { success: false, error };
-    // console.log(error);
   }
 };
 
