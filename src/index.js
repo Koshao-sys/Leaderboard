@@ -2,8 +2,6 @@ import './style.css';
 import loadScores from './modules/scores.js';
 import { getScores, postScores } from './modules/scores-api.js';
 
-getScores().then((result) => ((result.success) ? loadScores(document.querySelector('.scores-table'), result.data.result) : result.error));
-
 const btnRefresh = document.getElementById('btnFresh');
 btnRefresh.onclick = () => {
   getScores().then((result) => {
