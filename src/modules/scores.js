@@ -1,5 +1,3 @@
-import { postScores } from "./scores-api";
-
 const loadScores = (scoresTable, scores) => {
   scoresTable.innerHTML = '';
   const list = document.createElement('ul');
@@ -19,4 +17,4 @@ const loadScores = (scoresTable, scores) => {
   }
 };
 
-export { loadScores };
+export default loadScores;
