@@ -7,11 +7,9 @@ const loadScores = (scoresTable, scores) => {
     const item = document.createElement('li');
     item.classList = 'list-item';
     item.innerHTML = `
-    <li>
       <span>${scores[i].user}</span>
       <span>:</span>
       <span>${scores[i].score}</span>
-    </li>
     `;
     list.appendChild(item);
   }

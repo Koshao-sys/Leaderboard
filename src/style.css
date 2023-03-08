@@ -1,5 +1,9 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  background-image: url(./images/bg6.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .main-container {
@@ -9,6 +13,9 @@ body {
 
 .header {
   font-size: 50px;
+  text-align: center;
+  border: 5px solid #fff;
+  box-shadow: 2px 2px 4px rgba(0.8, 0.9, 0.9, 0.9);
 }
 
 .scores-container {
@@ -36,6 +43,7 @@ body {
 
 .refresh h2 {
   margin: 0;
+  color: #fff;
 }
 
 .scores-table {
@@ -50,10 +58,20 @@ body {
 
 .scores-table .list-items .list-item {
   list-style: none;
+  padding: 2px 0 2px 12px;
 }
 
 .scores-table .list-items .list-item:nth-child(even) {
   background-color: #e8e4e3;
+  font-size: 16px;
+  font-weight: 900;
+  border-radius: 10px;
+}
+
+.scores-table .list-items .list-item:nth-child(odd) {
+  color: #fff;
+  font-weight: 900;
+  font-size: 16px;
 }
 
 .add-score {
@@ -63,6 +81,7 @@ body {
 .add-score h2 {
   margin: 0;
   text-align: center;
+  color: #fff;
 }
 
 .add-score ul {
