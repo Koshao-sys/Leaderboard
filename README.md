@@ -95,6 +95,8 @@ After you're finished please remove all the comments and instructions!
 
 - **Dynamically created html**
 - **Add scores List**
+- **Hit the API**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
