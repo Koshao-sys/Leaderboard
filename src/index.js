@@ -29,7 +29,7 @@ addScore.onclick = (e) => {
       const resp = result.data;
       error.textContent = resp.message;
       if (error.textContent !== '') {
-        error.style.color = 'red';
+        error.style.color = '#05fa11';
       } else {
         error.textContent = resp.result;
         error.style.color = 'green';
