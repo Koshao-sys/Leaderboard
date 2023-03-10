@@ -67,7 +67,6 @@ body {
   color: #fff;
   border-radius: 5px;
   font-family: 'Courier New', Courier, monospace;
-  
 }
 
 .recent-scores {
@@ -75,7 +74,6 @@ body {
 }
 
 .scores-table {
-  margin-top: 20px;
   height: 60vh;
   overflow: auto;
   width: 90%;
@@ -84,7 +82,7 @@ body {
 }
 
 .scores-table::-webkit-scrollbar {
-  width: 0px; /* make the scrollbar disappear */
+  width: 0; /* make the scrollbar disappear */
   background-color: transparent; /* set the background color of the scrollbar track to transparent */
 }
 
@@ -136,7 +134,7 @@ body {
   background-color: #36454f;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 1px 0px 2px 2px rgb(235 209 209 / 90%);
+  box-shadow: 1px 0 2px 2px rgb(235 209 209 / 90%);
   animation: add-score 2s linear infinite;
 }
 
@@ -144,15 +142,16 @@ body {
   0% {
     border-color: #fff;
   }
+
   50% {
     border-color: #14f71f;
-    box-shadow: 1px 0px 2px 6px rgba(120, 243, 196, 0.9);
+    box-shadow: 1px 0 2px 6px rgba(120, 243, 196, 0.9);
   }
+
   100% {
     border-color: #fff;
   }
 }
-
 
 .add-score h2 {
   margin: 0;
@@ -189,6 +188,6 @@ body {
   background-color: inherit;
   padding: 5px;
   font-family: 'Courier New', Courier, monospace;
-  border-radius: 5PX;
+  border-radius: 5px;
   color: #fff;
 }
