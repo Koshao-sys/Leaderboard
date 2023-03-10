@@ -9,23 +9,27 @@
 </head>
 <body>
     <div class="main-container">
-        <h1 class="header">Leaderboard</h1>
         <div class="scores-container">
             <div class="recent-scores">
-              <div class="refresh">
-                <h2>Recent scores</h2>
-                <button id="btnFresh" class="btn-refresh" type="submit">Refresh</button>
+              <div class="head-container">
+                <h1 class="header">LEADERBOARD</h1>
+                <span class="liner"></span>
+                <div class="refresh">
+                  <h2>RECENT SCORES</h2>
+                  <span class="circle"></span>
+                  <button id="btnFresh" class="btn-refresh" type="submit">REFRESH</button>
+                </div>
               </div>
               <div class="scores-table"></div>
             </div>
             <div class="add-score">
-              <h2>Add your score</h2>
+              <h2>ADD YOUR SCORE</h2>
               <form id="addForm" action="submit">
                <ul>
                  <li><input type="text" name="user" placeholder="Your name"></li>
                  <li><input type="text" name="score" placeholder="Your score"></li>
                  <small class="errmsg"></small>
-                 <li><button id="addScore" type="submit">Submit</button></li>
+                 <li><button id="addScore" type="submit">SUBMIT</button></li>
                </ul>
               </form> 
             </div>
