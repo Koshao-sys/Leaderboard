@@ -82,8 +82,8 @@ body {
 }
 
 .scores-table::-webkit-scrollbar {
-  width: 0; /* make the scrollbar disappear */
-  background-color: transparent; /* set the background color of the scrollbar track to transparent */
+  width: 0; 
+  background-color: transparent;
 }
 
 .scores-table .list-items {
