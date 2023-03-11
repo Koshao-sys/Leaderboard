@@ -7,16 +7,17 @@ body {
 }
 
 .main-container {
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
 .scores-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   gap: 10%;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
 .head-container {
@@ -52,6 +53,7 @@ body {
 
 .refresh h2 {
   margin: 0;
+  font-size: 18px;
 }
 
 .circle {
@@ -70,7 +72,7 @@ body {
 }
 
 .recent-scores {
-  width: 45%;
+  width: 100%;
 }
 
 .scores-table {
@@ -129,13 +131,15 @@ body {
 }
 
 .add-score {
-  width: 40%;
+  width: 100%;
+  box-sizing: border-box;
   align-self: center;
   background-color: #36454f;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 1px 0 2px 2px rgb(235 209 209 / 90%);
   animation: add-score 2s linear infinite;
+  margin: 25px;
 }
 
 @keyframes add-score {
@@ -190,4 +194,193 @@ body {
   font-family: 'Courier New', Courier, monospace;
   border-radius: 5px;
   color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .main-container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .scores-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 10%;
+    margin-top: 70px;
+  }
+
+  .head-container {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .head-container h1 {
+    margin: 0;
+  }
+
+  .liner {
+    height: 2px;
+    width: 60%;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .refresh {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .refresh h2 {
+    margin: 0;
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  .btn-refresh {
+    background-color: inherit;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .recent-scores {
+    width: 45%;
+  }
+
+  .scores-table {
+    height: 60vh;
+    overflow: auto;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .scores-table::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+  }
+
+  .scores-table .list-items {
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .scores-table .list-items .list-item {
+    list-style: none;
+    padding: 2px 12px 2px 12px;
+    display: flex;
+  }
+
+  .scores-table .list-items .list-item span:nth-child(1) {
+    width: 70%;
+  }
+
+  .scores-table .list-items .list-item span:nth-child(2) {
+    width: 15%;
+  }
+
+  .scores-table .list-items .list-item span:nth-child(3) {
+    width: 15%;
+    text-align: right;
+  }
+
+  .scores-table .list-items .list-item:nth-child(even) {
+    background-color: #706766;
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 2px;
+    color: #fff;
+  }
+
+  .scores-table .list-items .list-item:nth-child(odd) {
+    background-color: #36454f;
+    font-weight: 900;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .add-score {
+    width: 40%;
+    align-self: center;
+    background-color: #36454f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 0 2px 2px rgb(235 209 209 / 90%);
+    animation: add-score 2s linear infinite;
+  }
+
+  @keyframes add-score {
+    0% {
+      border-color: #fff;
+    }
+
+    50% {
+      border-color: #14f71f;
+      box-shadow: 1px 0 2px 6px rgba(120, 243, 196, 0.9);
+    }
+
+    100% {
+      border-color: #fff;
+    }
+  }
+
+  .add-score h2 {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+  }
+
+  .add-score ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .add-score ul li {
+    list-style: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .add-score ul li input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+  }
+
+  .add-score ul li button {
+    float: right;
+    border: 2px solid #fff;
+    background-color: inherit;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    color: #fff;
+  }
 }
